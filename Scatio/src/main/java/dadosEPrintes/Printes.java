@@ -27,4 +27,8 @@ public class Printes {
                            "│  ├┬┘│├─┤├┬┘  └─┐│ │ ││ │  ││││ │  ╚═╗║  ╠═╣ ║ ║║ ║\n" +
                            "└─┘┴└─┴┴ ┴┴└─  └─┘┴ ┴ ┴└─┘  ┘└┘└─┘  ╚═╝╚═╝╩ ╩ ╩ ╩╚═╝");
     }
+
+    public static void opcaoInvalida() {
+        System.out.println("--> OPÇÃO INVÁLIDA.");
+    }
 }

@@ -2,13 +2,57 @@ package dadosEPrintes;
 
 public class SingletonDados {
 
-    private SingletonDados uniqueInstance;
-    private String pastaDados;
+    private static SingletonDados uniqueInstance;
+    private static String pastaDados;
+    private String nomeSitio;
+    private String emailSitio;
+    private String senhaSitio;
 
     private SingletonDados(){}
 
-    public SingletonDados getInstance() {
-        System.out.println();
+    public static String conferirNomeSitio(String nomeSitioAtual, String nomeSitioNovo) {
+        boolean certo = true;
+
+        for (char c: nomeSitioNovo.strip().toCharArray()) {
+            if (c == ' ' || c == '@') {
+                certo = false;
+                break;
+            }
+        }
+        if (certo) {
+            return nomeSitioNovo;
+        } else {
+            Printes.espaco();
+            System.out.println("--> O NOME NÃO PODE TER ESPAÇOS EM BRANCOS OU @.");
+            return nomeSitioAtual;
+        }
+    }
+
+    public static String conferirSenhaSitio(String senhaSitioAtual, String senhaSitioNovo) {
+        boolean certo = true;
+
+        if (senhaSitioNovo.length() < 8) {
+            certo = false;
+        }
+
+        if (certo) {
+            return senhaSitioNovo;
+        } else {
+            Printes.espaco();
+            System.out.println("--> A SENHA NÃO PODE TER MENOS DE 8 CARACTERES.");
+            return senhaSitioAtual;
+        }
+    }
+
+    public static synchronized SingletonDados getInstance(){
+        if(uniqueInstance == null){
+            synchronized(SingletonDados.class){
+                if(uniqueInstance == null){
+                    uniqueInstance = new SingletonDados();
+                }
+            }
+        }
+        return uniqueInstance;
     }
 
     public void setPastaDados(String pasta) {
@@ -20,10 +64,10 @@ public class SingletonDados {
     }
 
     public boolean criarSitio(String[] dados) {
-
+        return false;
     }
 
-    public void logarNoSitio() {
-
+    public char logarNoSitio(String[] infoConta) {
+        return 'n';
     }
 }
