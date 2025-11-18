@@ -11,20 +11,53 @@ public class SingletonDados {
     private SingletonDados(){}
 
     public static String conferirNomeSitio(String nomeSitioAtual, String nomeSitioNovo) {
+        System.out.println("Chegou!-!");
         boolean certo = true;
 
-        for (char c: nomeSitioNovo.strip().toCharArray()) {
+        for (char c: nomeSitioNovo.toCharArray()) {
             if (c == ' ' || c == '@') {
+                certo = false;
+            }
+        }
+
+        if (nomeSitioNovo.length() < 5) certo = false;
+
+        Printes.espaco();
+
+        if (certo) {
+            System.out.println("Chegou!-!1");
+            return nomeSitioNovo;
+        } else {
+            System.out.println("Chegou!-!2");
+            System.out.println("--> O NOME PRECISA DE PELO MENOS 5 CARACTERES E NÃO PODE TER ESPAÇOS EM BRANCOS OU @.");
+            return nomeSitioAtual;
+        }
+    }
+
+    public static String conferiremailSitio(String emailSitioAtual, String emailSitioNovo) {
+        boolean certo = false;
+
+        for (char c: emailSitioNovo.strip().toCharArray()) {
+            if (c == '@') {
+                certo = true;
+                break;
+            }
+        }
+
+        for (char c: emailSitioNovo.strip().toCharArray()) {
+            if (c == ' ') {
                 certo = false;
                 break;
             }
         }
+
+        Printes.espaco();
+
         if (certo) {
-            return nomeSitioNovo;
+            return emailSitioNovo;
         } else {
-            Printes.espaco();
-            System.out.println("--> O NOME NÃO PODE TER ESPAÇOS EM BRANCOS OU @.");
-            return nomeSitioAtual;
+            System.out.println("--> O E-MAIL NÃO PODE TER ESPAÇOS EM BRANCOS, E PRECISA DE UM DOMÍNIO COM @.");
+            return emailSitioAtual;
         }
     }
 
@@ -35,10 +68,11 @@ public class SingletonDados {
             certo = false;
         }
 
+        Printes.espaco();
+
         if (certo) {
             return senhaSitioNovo;
         } else {
-            Printes.espaco();
             System.out.println("--> A SENHA NÃO PODE TER MENOS DE 8 CARACTERES.");
             return senhaSitioAtual;
         }
@@ -63,8 +97,8 @@ public class SingletonDados {
         return pastaDados;
     }
 
-    public boolean criarSitio(String[] dados) {
-        return false;
+    public char criarSitio(String[] dados) {
+        return 'l';
     }
 
     public char logarNoSitio(String[] infoConta) {
