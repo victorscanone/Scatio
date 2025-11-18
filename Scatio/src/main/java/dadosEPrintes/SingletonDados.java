@@ -17,6 +17,7 @@ public class SingletonDados {
         for (char c: nomeSitioNovo.toCharArray()) {
             if (c == ' ' || c == '@') {
                 certo = false;
+                break;
             }
         }
 
@@ -64,9 +65,7 @@ public class SingletonDados {
     public static String conferirSenhaSitio(String senhaSitioAtual, String senhaSitioNovo) {
         boolean certo = true;
 
-        if (senhaSitioNovo.length() < 8) {
-            certo = false;
-        }
+        if (senhaSitioNovo.length() < 8) certo = false;
 
         Printes.espaco();
 
