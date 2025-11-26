@@ -5,7 +5,9 @@ public class Printes {
         System.out.println("───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────");
     }
 
-    public static void espaco() {System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");}
+    public static void espaco() {
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    }
 
     public static void menuPrincipal() {
         System.out.println("┌─┐┬┌─┐┌┬┐┌─┐┌┬┐┌─┐  ┌─┐┌─┐┬─┐┌─┐  ┌─┐┬┌┬┐┬┌─┐┌─┐\n" +
@@ -28,6 +30,77 @@ public class Printes {
                            "└─┘┴└─┴┴ ┴┴└─  └─┘┴ ┴ ┴└─┘  ┘└┘└─┘  ╚═╝╚═╝╩ ╩ ╩ ╩╚═╝");
     }
 
+    public static void criacoes() {
+        System.out.println("┌─┐┬─┐┬┌─┐┌─┐┌─┐┌─┐┌─┐\n" +
+                           "│  ├┬┘│├─┤│  │ │├┤ └─┐\n" +
+                           "└─┘┴└─┴┴ ┴└─┘└─┘└─┘└─┘");
+    }
+
+    public static void adicionarNovaCriacaoDeAves() {
+        System.out.println("┌─┐┌┬┐┬┌─┐┬┌─┐┌┐┌┌─┐┬─┐  ┌┐┌┌─┐┬  ┬┌─┐  ┌─┐┬─┐┬┌─┐┌─┐┌─┐┌─┐  ┌┬┐┌─┐  ┌─┐┬  ┬┌─┐┌─┐\n" +
+                           "├─┤ ││││  ││ ││││├─┤├┬┘  ││││ │└┐┌┘├─┤  │  ├┬┘│├─┤│  ├─┤│ │   ││├┤   ├─┤└┐┌┘├┤ └─┐\n" +
+                           "┴ ┴─┴┘┴└─┘┴└─┘┘└┘┴ ┴┴└─  ┘└┘└─┘ └┘ ┴ ┴  └─┘┴└─┴┴ ┴└─┘┴ ┴└─┘  ─┴┘└─┘  ┴ ┴ └┘ └─┘└─┘");
+    }
+
+    public static void adicionarNovaCriacaoDeBovinos() {
+        System.out.println("┌─┐┌┬┐┬┌─┐┬┌─┐┌┐┌┌─┐┬─┐  ┌┐┌┌─┐┬  ┬┌─┐  ┌─┐┬─┐┬┌─┐┌─┐┌─┐┌─┐  ┌┬┐┌─┐  ┌┐ ┌─┐┬  ┬┬┌┐┌┌─┐┌─┐\n" +
+                           "├─┤ ││││  ││ ││││├─┤├┬┘  ││││ │└┐┌┘├─┤  │  ├┬┘│├─┤│  ├─┤│ │   ││├┤   ├┴┐│ │└┐┌┘│││││ │└─┐\n" +
+                           "┴ ┴─┴┘┴└─┘┴└─┘┘└┘┴ ┴┴└─  ┘└┘└─┘ └┘ ┴ ┴  └─┘┴└─┴┴ ┴└─┘┴ ┴└─┘  ─┴┘└─┘  └─┘└─┘ └┘ ┴┘└┘└─┘└─┘");
+    }
+
+    public static void alterarCriacao() {
+        System.out.println("┌─┐┬ ┌┬┐┌─┐┬─┐┌─┐┬─┐  ┌─┐┬─┐┬┌─┐┌─┐┌─┐┌─┐\n" +
+                           "├─┤│  │ ├┤ ├┬┘├─┤├┬┘  │  ├┬┘│├─┤│  ├─┤│ │\n" +
+                           "┴ ┴┴─┘┴ └─┘┴└─┴ ┴┴└─  └─┘┴└─┴┴ ┴└─┘┴ ┴└─┘");
+    }
+
+    public static void animais() {
+        System.out.println("┌─┐┌┐┌┬┌┬┐┌─┐┬┌─┐\n" +
+                           "├─┤│││││││├─┤│└─┐\n" +
+                           "┴ ┴┘└┘┴┴ ┴┴ ┴┴└─┘");
+    }
+
+    public static void adicionarNovaAve() {
+        System.out.println("┌─┐┌┬┐┬┌─┐┬┌─┐┌┐┌┌─┐┬─┐  ┌┐┌┌─┐┬  ┬┌─┐  ┌─┐┬  ┬┌─┐\n" +
+                           "├─┤ ││││  ││ ││││├─┤├┬┘  ││││ │└┐┌┘├─┤  ├─┤└┐┌┘├┤ \n" +
+                           "┴ ┴─┴┘┴└─┘┴└─┘┘└┘┴ ┴┴└─  ┘└┘└─┘ └┘ ┴ ┴  ┴ ┴ └┘ └─┘");
+    }
+
+    public static void alterarAve() {
+        System.out.println("┌─┐┬ ┌┬┐┌─┐┬─┐┌─┐┬─┐  ┌─┐┬  ┬┌─┐\n" +
+                           "├─┤│  │ ├┤ ├┬┘├─┤├┬┘  ├─┤└┐┌┘├┤ \n" +
+                           "┴ ┴┴─┘┴ └─┘┴└─┴ ┴┴└─  ┴ ┴ └┘ └─┘");
+    }
+
+    public static void adicionarNovoBovino() {
+        System.out.println("┌─┐┌┬┐┬┌─┐┬┌─┐┌┐┌┌─┐┬─┐  ┌┐┌┌─┐┬  ┬┌─┐  ┌┐ ┌─┐┬  ┬┬┌┐┌┌─┐\n" +
+                           "├─┤ ││││  ││ ││││├─┤├┬┘  ││││ │└┐┌┘│ │  ├┴┐│ │└┐┌┘│││││ │\n" +
+                           "┴ ┴─┴┘┴└─┘┴└─┘┘└┘┴ ┴┴└─  ┘└┘└─┘ └┘ └─┘  └─┘└─┘ └┘ ┴┘└┘└─┘");
+    }
+
+    public static void alterarBovino() {
+        System.out.println("┌─┐┬ ┌┬┐┌─┐┬─┐┌─┐┬─┐  ┌┐ ┌─┐┬  ┬┬┌┐┌┌─┐\n" +
+                           "├─┤│  │ ├┤ ├┬┘├─┤├┬┘  ├┴┐│ │└┐┌┘│││││ │\n" +
+                           "┴ ┴┴─┘┴ └─┘┴└─┴ ┴┴└─  └─┘└─┘ └┘ ┴┘└┘└─┘");
+    }
+
+    public static void racoes() {
+        System.out.println("┬─┐┌─┐┌─┐┌─┐┌─┐┌─┐\n" +
+                           "├┬┘├─┤│  │ │├┤ └─┐\n" +
+                           "┴└─┴ ┴└─┘└─┘└─┘└─┘");
+    }
+
+    public static void adicionarRacao() {
+        System.out.println("┌─┐┬─┐┬┌─┐┬─┐  ┬─┐┌─┐┌─┐┌─┐┌─┐\n" +
+                           "│  ├┬┘│├─┤├┬┘  ├┬┘├─┤│  ├─┤│ │\n" +
+                           "└─┘┴└─┴┴ ┴┴└─  ┴└─┴ ┴└─┘┴ ┴└─┘");
+    }
+
+    public static void alterarRacao() {
+        System.out.println("┌─┐┬ ┌┬┐┌─┐┬─┐┌─┐┬─┐  ┬─┐┌─┐┌─┐┌─┐┌─┐\n" +
+                           "├─┤│  │ ├┤ ├┬┘├─┤├┬┘  ├┬┘├─┤│  ├─┤│ │\n" +
+                           "┴ ┴┴─┘┴ └─┘┴└─┴ ┴┴└─  ┴└─┴ ┴└─┘┴ ┴└─┘");
+    }
     public static void opcaoInvalida() {
         System.out.println("--> OPÇÃO INVÁLIDA.");
     }
